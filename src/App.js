@@ -43,7 +43,7 @@ const Counter = forwardRef(function Counter(props, ref) {
 
   return (
     <>
-      <button onClick={() => setCount(count + 1)}>Add one to count</button>
+      <button {...props} onClick={() => setCount(count + 1)}>Add one to count</button>
       <p>Count: {count}</p>
     </>
   );
